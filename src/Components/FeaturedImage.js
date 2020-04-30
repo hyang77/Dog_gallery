@@ -1,11 +1,13 @@
 import React from "react";
+import "./style.css";
 
-function FeaturedImage () {
+function FeaturedImage(props) {
   return (
-      <div className="container">
-        <div className="jumbotron">
-        </div>
+    <div className="container">
+      <div className="jumbotron">
+        <img src={props.featuredImage.message} alt="Featured" />
       </div>
+    </div>
   );
 }
 

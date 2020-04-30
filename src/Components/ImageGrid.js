@@ -1,7 +1,18 @@
 import React from "react";
+import "./style.css";
 
-function ImageGrid() {
-  return <div className="grid-container"></div>;
+function ImageGrid(props) {
+  return (
+    <div className="container grid-container">
+      {props.imageGrid.message.map((image) => {
+        return (
+          <div className="grid-items" key={image.toString()}>
+            <img src={image} alt="" />
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default ImageGrid;

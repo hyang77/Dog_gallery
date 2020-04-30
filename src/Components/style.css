@@ -1,0 +1,19 @@
+.grid-container {
+  border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.grid-items > img {
+  width: 150px;
+  margin: 5px;
+}
+
+.jumbotron > img {
+  box-sizing: border-box;
+  width: 300px;
+  display: block;
+  margin: -40px auto;
+}
