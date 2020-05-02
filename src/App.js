@@ -7,11 +7,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      featuredImage: {
-        message:
-          "https://images.dog.ceo/breeds/hound-afghan/n02088094_5927.jpg",
-        status: "success",
-      },
+      featuredImage: {},
 
       imageGrid: {
         message: [
@@ -56,11 +52,22 @@ class App extends React.Component {
     );
   }
 
+  componentDidMount() {
+    fetch("https://dog.ceo/api/breed/husky/images/random")
+      .then((res) => {
+        return res.json();
+      })
+      .then((json) => {
+        this.setState({
+          featuredImage: json,
+        });
+      });
+  }
+
   handleUpdateImage(evt) {
     var featuredImage = { ...this.state.featuredImage };
     featuredImage.message = evt.target.src;
     this.setState({ featuredImage });
-
   }
 }
 
