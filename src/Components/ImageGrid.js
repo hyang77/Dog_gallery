@@ -7,7 +7,7 @@ function ImageGrid(props) {
       {props.imageGrid.message.map((image) => {
         return (
           <div className="grid-items" key={image.toString()}>
-            <img src={image} alt="" />
+            <img onClick={props.onClick}  src={image} alt="" />
           </div>
         );
       })}

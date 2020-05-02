@@ -33,6 +33,7 @@ class App extends React.Component {
         status: "success",
       },
     };
+    this.handleUpdateImage = this.handleUpdateImage.bind(this);
   }
   render() {
     return (
@@ -47,9 +48,19 @@ class App extends React.Component {
           </div>
         </div>
         <FeaturedImage featuredImage={this.state.featuredImage} />
-        <ImageGrid imageGrid={this.state.imageGrid} />
+        <ImageGrid
+          onClick={this.handleUpdateImage}
+          imageGrid={this.state.imageGrid}
+        />
       </React.Fragment>
     );
+  }
+
+  handleUpdateImage(evt) {
+    var featuredImage = { ...this.state.featuredImage };
+    featuredImage.message = evt.target.src;
+    this.setState({ featuredImage });
+
   }
 }
 
