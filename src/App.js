@@ -13,6 +13,8 @@ class App extends React.Component {
         message: [],
         status: "",
       },
+      breed: ["Husky", "Golden retriever", "Shiba"]
+      
     };
     this.handleUpdateImage = this.handleUpdateImage.bind(this);
   }
@@ -24,7 +26,7 @@ class App extends React.Component {
             <div className="jumbotron">
               <h1 className="display-4">Dog Gallery</h1>
               <p className="lead">ITMD-565 -hyang77@hawk.iit.edu</p>
-              <BreedSelect />
+              <BreedSelect breed={this.state.breed}/>
             </div>
           </div>
         </div>
@@ -58,6 +60,7 @@ class App extends React.Component {
         });
       });
   }
+  
 
   handleUpdateImage(evt) {
     var featuredImage = { ...this.state.featuredImage };
