@@ -13,10 +13,10 @@ class App extends React.Component {
         message: [],
         status: "",
       },
-      breed: ["Husky", "Golden retriever", "Shiba"]
-      
+      breed: "Husky",
     };
     this.handleUpdateImage = this.handleUpdateImage.bind(this);
+    this.handleChangeBreed = this.handleChangeBreed.bind(this);
   }
   render() {
     return (
@@ -24,9 +24,9 @@ class App extends React.Component {
         <div className="App">
           <div className="container">
             <div className="jumbotron">
-              <h1 className="display-4">Dog Gallery</h1>
-              <p className="lead">ITMD-565 -hyang77@hawk.iit.edu</p>
-              <BreedSelect breed={this.state.breed}/>
+              <h1 className="display-4">{this.state.breed} Dog Gallery</h1>
+              <p className="lead">Welcome to my favorite dog gallery!</p>
+              <BreedSelect onChange={this.handleChangeBreed} />
             </div>
           </div>
         </div>
@@ -60,7 +60,71 @@ class App extends React.Component {
         });
       });
   }
-  
+
+  handleChangeBreed(evt) {
+    this.setState({ breed: evt.target.value });
+    if (evt.target.value === "Husky") {
+      fetch("https://dog.ceo/api/breed/husky/images/random")
+        .then((res) => {
+          return res.json();
+        })
+        .then((json) => {
+          this.setState({
+            featuredImage: json,
+          });
+        });
+
+      fetch("https://dog.ceo/api/breed/husky/images/random/18")
+        .then((res) => {
+          return res.json();
+        })
+        .then((json) => {
+          this.setState({
+            imageGrid: json,
+          });
+        });
+    } else if (evt.target.value === "Shiba") {
+      fetch("https://dog.ceo/api/breed/shiba/images/random")
+        .then((res) => {
+          return res.json();
+        })
+        .then((json) => {
+          this.setState({
+            featuredImage: json,
+          });
+        });
+
+      fetch("https://dog.ceo/api/breed/shiba/images/random/18")
+        .then((res) => {
+          return res.json();
+        })
+        .then((json) => {
+          this.setState({
+            imageGrid: json,
+          });
+        });
+    } else {
+      fetch("https://dog.ceo/api/breed/retriever/images/random")
+        .then((res) => {
+          return res.json();
+        })
+        .then((json) => {
+          this.setState({
+            featuredImage: json,
+          });
+        });
+
+      fetch("https://dog.ceo/api/breed/retriever/images/random/18")
+        .then((res) => {
+          return res.json();
+        })
+        .then((json) => {
+          this.setState({
+            imageGrid: json,
+          });
+        });
+    }
+  }
 
   handleUpdateImage(evt) {
     var featuredImage = { ...this.state.featuredImage };

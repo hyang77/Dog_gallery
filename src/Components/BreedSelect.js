@@ -4,10 +4,11 @@ function BreedSelect(props) {
   return (
     <React.Fragment>
       <label>Select Breed: </label>
-      <select id="breeds">
-        <option value={props.breed[0]}>{props.breed[0]}</option>
-        <option value={props.breed[1]}>{props.breed[1]}</option>
-        <option value={props.breed[2]}>{props.breed[2]}</option>
+      <select onChange={props.onChange} id="breeds">
+        
+        <option defaultValue="Husky">Husky</option>
+        <option value="Retriever">Retriever</option>
+        <option value="Shiba">Shiba</option>
       </select>
     </React.Fragment>
   );
