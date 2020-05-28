@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/dog-gallery-react/static/css/main.c8cf117b.chunk.css",
+    "main.js": "/dog-gallery-react/static/js/main.4569bc25.chunk.js",
+    "main.js.map": "/dog-gallery-react/static/js/main.4569bc25.chunk.js.map",
+    "runtime-main.js": "/dog-gallery-react/static/js/runtime-main.caffbbbf.js",
+    "runtime-main.js.map": "/dog-gallery-react/static/js/runtime-main.caffbbbf.js.map",
+    "static/css/2.74189dbb.chunk.css": "/dog-gallery-react/static/css/2.74189dbb.chunk.css",
+    "static/js/2.17e1927a.chunk.js": "/dog-gallery-react/static/js/2.17e1927a.chunk.js",
+    "static/js/2.17e1927a.chunk.js.map": "/dog-gallery-react/static/js/2.17e1927a.chunk.js.map",
+    "index.html": "/dog-gallery-react/index.html",
+    "precache-manifest.f4a145805d8e836380c0e88c3e5828fb.js": "/dog-gallery-react/precache-manifest.f4a145805d8e836380c0e88c3e5828fb.js",
+    "service-worker.js": "/dog-gallery-react/service-worker.js",
+    "static/css/2.74189dbb.chunk.css.map": "/dog-gallery-react/static/css/2.74189dbb.chunk.css.map",
+    "static/css/main.c8cf117b.chunk.css.map": "/dog-gallery-react/static/css/main.c8cf117b.chunk.css.map",
+    "static/js/2.17e1927a.chunk.js.LICENSE.txt": "/dog-gallery-react/static/js/2.17e1927a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.caffbbbf.js",
+    "static/css/2.74189dbb.chunk.css",
+    "static/js/2.17e1927a.chunk.js",
+    "static/css/main.c8cf117b.chunk.css",
+    "static/js/main.4569bc25.chunk.js"
+  ]
+}
