@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d6649b22561cab246b8b44073cc9767",
+    "revision": "d7e03b58f5ea24801b17cba69331f776",
     "url": "/dog-gallery-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dog-gallery-react/static/css/2.74189dbb.chunk.css"
   },
   {
-    "revision": "58c3fc1a282993f5c50b",
+    "revision": "4c5f38930ab384535d89",
     "url": "/dog-gallery-react/static/css/main.c8cf117b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dog-gallery-react/static/js/2.17e1927a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58c3fc1a282993f5c50b",
-    "url": "/dog-gallery-react/static/js/main.4569bc25.chunk.js"
+    "revision": "4c5f38930ab384535d89",
+    "url": "/dog-gallery-react/static/js/main.a68be9a3.chunk.js"
   },
   {
     "revision": "9952fb7d1f857dbb14ab",

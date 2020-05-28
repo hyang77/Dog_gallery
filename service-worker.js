@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dog-gallery-react/precache-manifest.f4a145805d8e836380c0e88c3e5828fb.js"
+  "/dog-gallery-react/precache-manifest.6b0c575413c7f4d13ba2f1653c576295.js"
 );
 
 self.addEventListener('message', (event) => {
